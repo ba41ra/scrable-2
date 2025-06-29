@@ -1,7 +1,7 @@
 import random
 
 LETTER_SCORES = {
-    "А": one,
+    "А": 1,
     "Б": 3,
     "В": 4,
     "Г": 2,
