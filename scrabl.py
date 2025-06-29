@@ -1,7 +1,7 @@
 import random
 
 LETTER_SCORES = {
-    "А": 1,
+    "А": one,
     "Б": 3,
     "В": 4,
     "Г": 2,
@@ -65,16 +65,16 @@ def main():
     rand_letter = get_random_letter()
     print("Начальная буква:", rand_letter)
     print("Игрок 1")
-    word_1 = get_word_with_letter(rand_letter)
-    player_score_1 = calculate_score(word_1)
+    word_one = get_word_with_letter(rand_letter)
+    player_score_one = calculate_score(word_one)
     print("Игрок 2")
-    word_2 = get_word_with_letter(rand_letter)
-    player_score_2 = calculate_score(word_2)
-    print(f"Игрок 1 ввел слово {word_1}, и получил {player_score_1} очков")
-    print(f"Игрок 1 ввел слово {word_2}, и получил {player_score_2} очков")
-    if player_score_1 > player_score_2:
+    word_two = get_word_with_letter(rand_letter)
+    player_score_two = calculate_score(word_two)
+    print(f"Игрок 1 ввел слово {word_one}, и получил {player_score_one} очков")
+    print(f"Игрок 2 ввел слово {word_two}, и получил {player_score_two} очков")
+    if player_score_one > player_score_two:
         print("Игрок 1 победил")
-    elif player_score_1 < player_score_2:
+    elif player_score_one < player_score_two:
         print("Игрок 2 победил")
     else:
         print("Ничья")
